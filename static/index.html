@@ -16,10 +16,8 @@
             <input type="date" id="datePicker">
             <button onclick="openSettings()">Day Settings</button>
             <div id="dynamicContent"></div>
-            <div id="buttons">
-                <button onclick="enterPicking()">Enter Picking</button>
-                <button onclick="enterHours()">Enter Hours</button>
-            </div>
+
+            <div class="column">
             <section id="pickingSection" class="hidden">
                 <h3>Enter Picking Details</h3>
                 <label for="pickNumber">Pick Number:</label>
@@ -43,6 +41,9 @@
                 <button onclick="savePicking()">Save</button>
                 <div id="pickingTable"></div>
             </section>
+        </div>
+
+        <div class="column">
             <section id="hoursSection" class="hidden">
                 <h3>Enter Hours</h3>
                 <label for="pickerCodeHours">Picker Code:</label>
@@ -60,6 +61,8 @@
                 <div id="hoursTable"></div>
             </section>
         </section>
+    </div>
+
     </main>
     <footer>
         <p>&copy; 2024 Picker Hours Entry</p>

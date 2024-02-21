@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Згортання на малих екранах */
+    justify-content: space-between; /* Рівномірне розташування між елементами */
+}
+
+.column {
+    width: 23%; /* Ширина кожної колонки */
+    padding: 10px;
+    background-color: #fff; /* Фон колонки */
+    border-radius: 5px; /* Закруглені кути */
+    margin-bottom: 20px; /* Відступ між колонками */
+}
+
+.content {
+    padding: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: blue;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Відступ внизу кнопки */
+    align-self: flex-end; /* Вирівнювання кнопки внизу колонки */
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+footer {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+        width: 100%; /* Колонки переходять на вертикальне розташування */
+        margin-bottom: 10px; /* Зменшення відступу між колонками на малих екранах */
+    }
+
+    label {
+        margin-bottom: 10px; /* Збільшення відступу між підписами на малих екранах */
+    }
+
+    button {
+        align-self: center; /* Вирівнювання кнопки по центру на малих екранах */
+    }
+}
