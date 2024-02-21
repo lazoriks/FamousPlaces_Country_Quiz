@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Settings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Day Settings</h1>
+    </header>
+    <main>
+        <section class="content">
+            <h2>Day Settings</h2>
+            <label for="pickNumber">Pick Number:</label>
+            <select id="pickNumber">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select><br>
+            <label for="mushroomCode">Mushroom Code:</label>
+            <select id="mushroomCode">
+                <option value="43">43</option>
+                <option value="142">142</option>
+                <option value="170">170</option>
+                <!-- Add other mushroom codes here -->
+            </select><br>
+            <label for="tunnelNumber">Tunnel Number:</label>
+            <select id="tunnelNumber">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <!-- Add other tunnel numbers here -->
+            </select><br>
+            <label for="pickerCode">Picker Code:</label>
+            <select id="pickerCode">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <!-- Add other picker codes here -->
+            </select><br>
+            <button onclick="saveSettings()">Save Settings</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Picker Hours Entry</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
