@@ -1,50 +1,85 @@
-// Функція для відкриття сторінки налаштувань
-function openSettings() {
-    window.location.href = 'settings.html';
-}
+window.onload = function() {
+    // Отримання збережених даних з локального сховища
+    var savedPicks = JSON.parse(localStorage.getItem('selectedPicks')) || [];
+    var savedMushrooms = JSON.parse(localStorage.getItem('selectedMushrooms')) || [];
+    var savedTunnels = JSON.parse(localStorage.getItem('selectedTunnels')) || [];
+    var savedPickers = JSON.parse(localStorage.getItem('selectedPickers')) || [];
 
-// Функція для збереження введених даних про підбор
-function enterPicking() {
-    // Отримання введених даних
-    var pickNumber = document.getElementById('pickNumber').value;
-    var tunnelNumber = document.getElementById('tunnelNumber').value;
-    var pickerCode = document.getElementById('pickerCode').value;
-    var mushroomCode = document.getElementById('mushroomCode').value;
-    var quantity = document.getElementById('quantity').value;
+    // Встановлення стану чекбоксів збереженими значеннями
+    savedPicks.forEach(function(value) {
+        var checkbox = document.getElementById('pick' + value);
+        if (checkbox) {
+            checkbox.checked = true;
+        }
+    });
 
-    // Валідація введених даних (можна додати)
-    if (pickNumber && tunnelNumber && pickerCode && mushroomCode && quantity) {
-        // Опціонально можна викликати функцію для збереження даних у таблицю
-        savePickingData(pickNumber, tunnelNumber, pickerCode, mushroomCode, quantity);
-    } else {
-        alert('Please fill in all fields.');
-    }
-}
+    savedMushrooms.forEach(function(value) {
+        var checkbox = document.getElementById('mushroom' + value);
+        if (checkbox) {
+            checkbox.checked = true;
+        }
+    });
 
-// Функція для збереження введених даних про години
-function enterHours() {
-    // Отримання введених даних
-    var pickerCode = document.getElementById('pickerCode').value;
-    var entryType = document.getElementById('entryType').value;
-    var hour = document.getElementById('hour').value;
+    savedTunnels.forEach(function(value) {
+        var checkbox = document.getElementById('tunnel' + value);
+        if (checkbox) {
+            checkbox.checked = true;
+        }
+    });
 
-    // Валідація введених даних (можна додати)
-    if (pickerCode && entryType && hour) {
-        // Опціонально можна викликати функцію для збереження даних у таблицю
-        saveHoursData(pickerCode, entryType, hour);
-    } else {
-        alert('Please fill in all fields.');
-    }
-}
+    savedPickers.forEach(function(value) {
+        var checkbox = document.getElementById('picker' + value);
+        if (checkbox) {
+            checkbox.checked = true;
+        }
+    });
+};
 
-// Функція для збереження даних про підбір у таблицю
-function savePickingData(pickNumber, tunnelNumber, pickerCode, mushroomCode, quantity) {
-    // Опціонально можна реалізувати логіку для збереження даних у таблицю
-    console.log('Picking data saved:', pickNumber, tunnelNumber, pickerCode, mushroomCode, quantity);
-}
+function saveSettings() {
+    // Отримання всіх чекбоксів для номерів, грибів, тунелів та кодів пікерів
+    var pickCheckboxes = document.querySelectorAll('input[id^="pick"]');
+    var mushroomCheckboxes = document.querySelectorAll('input[id^="mushroom"]');
+    var tunnelCheckboxes = document.querySelectorAll('input[id^="tunnel"]');
+    var pickerCheckboxes = document.querySelectorAll('input[id^="picker"]');
 
-// Функція для збереження даних про години у таблицю
-function saveHoursData(pickerCode, entryType, hour) {
-    // Опціонально можна реалізувати логіку для збереження даних у таблицю
-    console.log('Hours data saved:', pickerCode, entryType, hour);
+    // Збереження вибраних значень в масиви
+    var selectedPicks = [];
+    var selectedMushrooms = [];
+    var selectedTunnels = [];
+    var selectedPickers = [];
+
+    // Перевірка кожного чекбокса та додавання його значення до відповідного масиву, якщо він вибраний
+    pickCheckboxes.forEach(function(checkbox) {
+        if (checkbox.checked) {
+            selectedPicks.push(checkbox.value);
+        }
+    });
+
+    mushroomCheckboxes.forEach(function(checkbox) {
+        if (checkbox.checked) {
+            selectedMushrooms.push(checkbox.value);
+        }
+    });
+
+    tunnelCheckboxes.forEach(function(checkbox) {
+        if (checkbox.checked) {
+            selectedTunnels.push(checkbox.value);
+        }
+    });
+
+    pickerCheckboxes.forEach(function(checkbox) {
+        if (checkbox.checked) {
+            selectedPickers.push(checkbox.value);
+        }
+    });
+
+    // Збереження у локальне сховище
+    localStorage.setItem('selectedPicks', JSON.stringify(selectedPicks));
+    localStorage.setItem('selectedMushrooms', JSON.stringify(selectedMushrooms));
+    localStorage.setItem('selectedTunnels', JSON.stringify(selectedTunnels));
+    localStorage.setItem('selectedPickers', JSON.stringify(selectedPickers));
+
+    
+    window.close();
+    window.location.href = "index.html"; 
 }
