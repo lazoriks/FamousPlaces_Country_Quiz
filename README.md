@@ -33,7 +33,7 @@ Home page:
 The button is "Save" and below we display a table with the entered data with the following columns for the date:
 "ID" (picker code),  "Date", "Day of the week", "Type of entry", "Hour".
 
-![amiresponsive](https://github.com/lazoriks/InputHours/blob/main/static/images/solution.png)
+![amiresponsive](https://github.com/lazoriks/InputHours/tree/main/static/images/solution.png)
 
 ## Link to Live Site
 
@@ -43,19 +43,16 @@ This site was built using [GitHub Pages](https://github.com/lazoriks/InputHours)
 
 ### First-Time User Experience
 
-Users are greeted with a visually appealing background image and a clear navigation menu.
-Each section provides concise information about different business automation domains.
-Clicking on the images navigates users to dedicated pages for more details.
+Users Little time for a good implementation
 
 ### Returning User
 
-Returning users can easily navigate to specific sections of interest using the navigation menu.
-Consistent design and layout enhance a familiar experience for users.
+Returning users
 
 ### User Stories (PP4 & PP5)
 
 As a potential client, I want to understand the expertise of the developer in CRM, Accounting, and ERP.
-As a visitor, I want a visually appealing and easy-to-navigate portfolio site.
+As a visitor, I want a visually appealing and easy-to-navigate site.
 As a user interested in specific services, I want detailed information about each service.
 
 ## Design
@@ -66,7 +63,7 @@ Initial wireframes were created to plan the layout and structure of the site.
 
 ### Site Structure
 
-The site follows a one-page structure with distinct sections for CRM, Accounting & Payroll, ERP, and Contacts.
+The site follows a one-page structure .
 
 ### Imagery Used
 
@@ -85,32 +82,15 @@ Arial and sans-serif fonts for a clean and easily readable interface.
 
 ### Navigation
 
-Clear navigation menu at the top for easy section access.
-Each section has a link to its dedicated page for more detailed information.
 
-### Section Navigation and Profile
-* About me
-* Solutions
-* Contacts
-![Section1](https://github.com/lazoriks/Portfolio/blob/main/images/SectionProfile.png)
-
-### Section Solutions
-* CRM
-* Accounting&Payroll
-* ERP
-![Section2](https://github.com/lazoriks/Portfolio/blob/main/images/SectionSolutions.png)
-
-### Section Contacts
-![Section3](https://github.com/lazoriks/Portfolio/blob/main/images/SectionContacts.png)
 
 ## Future Features
 
-When learning Javascript, you will add dynamics and actions to the site
+When learning FullSatck, I will add dynamics and actions to the site with Django
 
 ## Testing
 
-![Check HTML](https://github.com/lazoriks/Portfolio/blob/main/images/CheckW3C.png)
-![Check CSS](https://github.com/lazoriks/Portfolio/blob/main/images/CheckCSS.png)
+
 
 ### Code Validation
 
