@@ -55,7 +55,13 @@ The game is developed using a Python terminal with the option of entering data a
 
 ![start_game](https://raw.githubusercontent.com/lazoriks/FamousPlaces_Country_Quiz/main/assets/images/start_game.png)
 
+#### Wrong Answer
 
+![wrong_game](https://raw.githubusercontent.com/lazoriks/FamousPlaces_Country_Quiz/main/assets/images/wrong_answer.png)
+
+#### Right Answer
+
+![right_answer](https://raw.githubusercontent.com/lazoriks/FamousPlaces_Country_Quiz/main/assets/images/right_answer.png)
 
 ### Typography
 
