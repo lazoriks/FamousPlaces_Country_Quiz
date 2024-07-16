@@ -51,6 +51,9 @@ Initial wireframes were created to plan the layout and structure of the site. Th
 
 The game is developed using a Python terminal with the option of entering data and displaying results
 
+#### Start Game
+
+![start_game](https://raw.githubusercontent.com/lazoriks/FamousPlaces_Country_Quiz/main/assets/images/start_game.png)
 
 
 
