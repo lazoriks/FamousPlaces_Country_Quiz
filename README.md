@@ -30,7 +30,18 @@ Returning users
 - As a visitor, I want a visually appealing and easy-to-navigate site.
 - As a user interested in educational games, I want detailed information about each feature and how to use it.
 
-## Design
+## Technologies Used
+
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) was used as the foundation of the site.
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/css) - was used to add the styles and layout of the site.
+* [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) - was used to arrange items simmetrically on the pages.
+* [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/grid)- was used to make "gallery" and "contact" pages responsive.
+* [CSS roots](https://developer.mozilla.org/en-US/docs/Web/CSS/:root) was used to declaring global CSS variables and apply them throughout the project.
+* [VSCode](https://code.visualstudio.com/) was used as the main tool to write and edit code.
+* [Git](https://git-scm.com/) was used for the version control of the website.
+* [GitHub](https://github.com/) was used to host the code of the website.
+* [GIMP](https://www.gimp.org/) was used to make and resize images for the README file.
+* [Python tutorials](https://www.w3schools.com/python) was used about tutorials for Python
 
 ### Wireframes
 
@@ -52,14 +63,11 @@ Arial and sans-serif fonts for a clean and easily readable interface.
 ### Navigation
 
 
-
 ## Future Features
 
 When learning FullSatck, I will add dynamics and actions to the site with Django
 
 ## Testing
-
-
 
 ### Code Validation
 
@@ -87,19 +95,31 @@ Bugs Fixed
 
 Addressed issues related to responsiveness and layout.
 
-Known Bugs
+#### Known Bugs
 
 No known bugs at the moment.
 
 HTML5, CSS3
 FontAwesome for icons
 
-Steps on Deploying, Cloning, and Forking
+### Steps on Deploying, Cloning, and Forking
 
 Include step-by-step instructions for deploying, cloning, and forking the project.
 
-Credits
+## Credits
 
-Acknowledgements
+### Content and text
 
+* Main information from [Youtube video for example](https://www.youtube.com/watch?v=zehwgTB0vV8)
+* Many info  [Build a Quiz Application With Python](https://realpython.com/python-quiz-application/)
+
+### Media
+
+* Open sites and sources of images and emblems
+* Code institute for the deployment process
+* Translated with www.DeepL.com/Translator and Grammarly for Windows
+
+### Acknowledgements
+* Special thanks to [Laura Mayock](https://www.linkedin.com/in/laura-mayock/) and Julia Konovalova for the call and conversation that helped me, after the first unsuccessful attempt, to find the strength in the first place and to understand my shortcomings in the project and complete it. 
+* Code Institute tutors and Slack community members for their support and help.
 
