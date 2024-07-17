@@ -1,21 +1,20 @@
 {
   "name": "terminal",
   "version": "1.0.0",
-  "main": "index.js",  
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js",  
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lazoriks/FamousPlaces_Country_Quiz.git"
+    "url": "git+https://github.com/lechien73/terminal.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lazoriks/FamousPlaces_Country_Quiz/issues"
+    "url": "https://github.com/lechien73/terminal/issues"
   },
-  "homepage": "https://github.com/lazoriks/FamousPlaces_Country_Quiz#readme",
+  "homepage": "https://github.com/lechien73/terminal#readme",
   "dependencies": {
     "node-static": "^0.7.11",
     "node-pty": "^0.10.1",
