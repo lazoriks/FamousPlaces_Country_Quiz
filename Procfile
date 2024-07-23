@@ -1,1 +1,1 @@
-web: gunicorn input-hours:app
+worker: python run.py
