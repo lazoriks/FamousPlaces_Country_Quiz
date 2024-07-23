@@ -1,6 +1,7 @@
 from random import randint
 from string import capwords
 
+
 def read_file(file):
     
     with open(file, 'r') as f:
